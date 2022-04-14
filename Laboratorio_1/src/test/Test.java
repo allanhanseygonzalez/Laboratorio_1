@@ -1,6 +1,7 @@
 package test;
 
 import carros.CarroBase;
+import carros.Crossover;
 import carros.Pickup;
 import carros.Sedan;
 import carros.Suv;
@@ -25,8 +26,10 @@ public class Test {
 		carro.imprimirCategoria();
 		
 		
+		MotorDiesel motorDiesel = new MotorDiesel();
 		
-		
+		CarroBase carro2 = new Crossover(motorDiesel);
+		carro2.imprimirCategoria();
 		
 		
 		
